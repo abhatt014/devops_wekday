@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Flask Practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="font-bold text-2xl text-blue-600">FlaskFolio</a>
+                </div>
+                <div class="flex space-x-8 items-center">
+                    <a href="/" class="text-gray-500 hover:text-blue-600 hover:border-b-2 hover:border-blue-300 px-1 py-2 text-sm font-medium transition-colors">Home</a>
+                    <a href="/about" class="text-gray-500 hover:text-blue-600 hover:border-b-2 hover:border-blue-300 px-1 py-2 text-sm font-medium transition-colors">About</a>
+                    <!-- Active link -->
+                    <a href="/portfolio" class="text-gray-900 border-b-2 border-blue-500 px-1 py-2 text-sm font-medium">Portfolio</a>
+                    <a href="/contact" class="text-gray-500 hover:text-blue-600 hover:border-b-2 hover:border-blue-300 px-1 py-2 text-sm font-medium transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow p-6">
+        <div class="max-w-6xl mx-auto mt-10">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-gray-900">My Projects</h2>
+                <p class="mt-4 text-xl text-gray-500">A collection of things I've built while learning.</p>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="h-48 bg-gradient-to-r from-blue-400 to-indigo-500"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Flask Task Manager</h3>
+                        <p class="text-gray-600 mb-4">A simple CRUD application built with Flask and SQLAlchemy to manage daily tasks.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">View Project &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="h-48 bg-gradient-to-r from-teal-400 to-emerald-500"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Weather Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Uses a public API to fetch and display weather data for different cities. Rendered with Jinja2.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">View Project &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="h-48 bg-gradient-to-r from-purple-400 to-pink-500"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Personal Blog</h3>
+                        <p class="text-gray-600 mb-4">A Markdown-based blogging engine. Features include dynamic routing and simple authentication.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">View Project &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-6 text-center text-gray-500">
+        <p>&copy; 2026 Flask Practice Site. Built with Python & Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <style>
+        body { font-family: Arial; margin: 0; }
+        header {
+            background: #007bff; color: white;
+            padding: 50px; text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            background: #f4f4f4;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+        .logout {
+            float: right;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>User Dashboard</h2>
+    <a href="login.html" class="logout">Logout</a>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h3>Welcome, {{ fullname }} ({{ role }})</h3>
+        <p>This is your dashboard.</p>
+    </div>
+
+    <div class="card">
+        <h3>Profile Info</h3>
+        <p>Email: {{ email }}</p>
+    </div>
+</div>
+
+</body>
+</html>

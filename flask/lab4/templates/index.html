@@ -1,0 +1,16 @@
+<h1>Welcome, {{ name }}!</h1>
+{# Using the 'name' variable #}
+
+<p>Happy {{ day }}!</p>
+{# Using the 'day' variable #}
+
+<h2>Your Tasks for Today:</h2>
+{% if tasks %}
+  <ul>
+    {% for i in tasks %}
+      <li>{{ i }}</li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No tasks for today.</p>
+{% endif %}
