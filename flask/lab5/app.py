@@ -1,10 +1,11 @@
-from flask import Flask, render_template,request
+from flask import Flask, render_template,request,url_for
 import mysql.connector
 
 app = Flask(__name__)
 
 # connect to mysql database
 conn = {
+#    'host': '192.168.81.130',
     'host': 'localhost',
     'user': 'test',
     'password': 'redhat',
@@ -62,8 +63,8 @@ def registeruser():
     cursor.close()
     connection.close()
     
-    return render_template('login.html', message="Registration successful. Please login.")  
-
+    #return render_template('login.html', message="Registration successful. Please login.")  
+    return url_for('login', message="Registration successful. Please login.")
 @app.route('/dashboard')
 def dashboard():
     return render_template('dashboard.html')  
